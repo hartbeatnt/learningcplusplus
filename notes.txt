@@ -1,0 +1,18 @@
+cout: console output
+  --  an object
+  --  followed by a 'leftward stream operator'
+      ( << ) that shows the flow of data from 
+      a value.
+    -- cout << "Hello World!";
+
+#include: a preprocessor directive, aka instruction
+  to the compiler. Tells the compiler to load a part
+  of the library.
+
+using: sets up the namespace by which to refer to objects
+  --  i.e. instead of needing std::cout << "Hello World!";
+      we can do using namespace std; and cout << "hello";
+
+line breaks: std::endl (or just endl if using namespace std)
+  can also use '\n' character
+
