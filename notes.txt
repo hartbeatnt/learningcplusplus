@@ -16,3 +16,14 @@ using: sets up the namespace by which to refer to objects
 line breaks: std::endl (or just endl if using namespace std)
   can also use '\n' character
 
+std::cin -- console input
+  --  can use a right-stream-operator ( >> ) to save
+      console input to a variable
+
+==  MUST ALWAYS DECLARE A VARIABLE BEFORE USING IT  ==
+  -- Variables must be declared with data type
+      --  Integer
+      --  Floating Point
+      --  Double precision floating point
+      --  Text String
+
