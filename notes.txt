@@ -26,4 +26,11 @@ std::cin -- console input
       --  Floating Point
       --  Double precision floating point
       --  Text String
+======================================================
+Loops: 
+  --  while (condition)
+  --  
+======================================================
+j = i++ : assign i to j, then increment i
+j = ++i : increment i, then assign i to j
 
