@@ -28,9 +28,26 @@ std::cin -- console input
       --  Text String
 ======================================================
 Loops: 
-  --  while (condition)
-  --  
+  --  while (condition) {action}
+  --  Do {action} while (condition)
+    --  like a standard while() but is guaranteed to 
+        execute at least once
 ======================================================
 j = i++ : assign i to j, then increment i
 j = ++i : increment i, then assign i to j
-
+======================================================
+To get a random number:
+  --  #include <cstlib>     
+      // for srand() and rand() functions
+  --  #include <ctime>
+      // for ctime() function
+  --  srand(time(nullptr))
+      // srand seed the rand function
+      // nullptr is supported as of c++ 11.
+        // With older compilers may need to use NULL
+  --  rand() will now give random number
+    --  will return a random unsigned integer anywhere
+        in the range from 0 to RAND_MAX
+    --  to get random number between 0 and n-1:
+          rand() % n
+======================================================
