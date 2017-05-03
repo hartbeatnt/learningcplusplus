@@ -68,4 +68,9 @@ all about that DDC
 
   --  Can also declare & define at same time, but then must
       define them in the reverse order that they are called
-      
+        --  { statements; } after declaration
+
+  --  By default, arguments are passed by value
+    --  Pointers are how you pass data by location (or reference)
+  
+  
