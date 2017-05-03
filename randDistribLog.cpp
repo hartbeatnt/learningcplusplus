@@ -15,7 +15,6 @@ int main()
     results[i] = 0;
   }
   srand(time(NULL));
-  cout << results << endl;
   cout << "how many trials shall we run?\n";
   cin >> trials;
   cout << "ok. here's "<<trials<<" trials:\n";

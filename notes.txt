@@ -82,6 +82,12 @@ ARRAYS======ARRAYS======ARRAYS======ARRAYS======ARRAYS===
     --  to initialize:
   --  data_type array_name[length] = { value1, value2, etc };
 
+======
+==
+==  Matrices
+    **
+    **  data_type matrix_name[rows][columns]
+
 =========================================================
 ==STRINGS====STRINGS====STRINGS====STRINGS====STRINGS====
 ===STRINGS====STRINGS====STRINGS====STRINGS====STRINGS===
@@ -94,3 +100,29 @@ ARRAYS======ARRAYS======ARRAYS======ARRAYS======ARRAYS===
     **
     **  string string_name = "string message";
 
+POINTERS                           POINTERS
+     POINTERS                   POINTERS
+          POINTERS           POINTERS
+               POINTERS   POINTERS            ----->
+                    POINTERS            POINTERS
+               POINTERS   POINTERS            ----->
+          POINTERS           POINTERS
+     POINTERS                   POINTERS
+POINTERS                           POINTERS
+
+a POINTER is a variable that contains a numeric memory address
+  --  allow for passing by reference
+  --  allow for relational data structures
+  
+  --  DECLARATION:
+      **  
+      **  type *pointer_name;
+
+  --  ASSIGNMENT:
+      **
+      **  pointer_name = &target_name
+          
+          ==  the & operator returns the memory
+              address of its operand
+
+  == *p = 5  // assigns the value 5 to the int pointed to by p
