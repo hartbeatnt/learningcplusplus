@@ -51,3 +51,21 @@ To get a random number:
     --  to get random number between 0 and n-1:
           rand() % n
 ======================================================
+Functions:
+all about that DDC
+  1) Declare
+  2) Define
+  3) Call
+
+  --  Best practices to declare functions at top of program
+      by 'prototyping'
+
+      !!!!  return_type function_name (argument_list);
+      !!!!
+      !!!!  ---------------------
+      !!!!  --  *return type can be void
+            --  *arguments must be preceded by types
+
+  --  Can also declare & define at same time, but then must
+      define them in the reverse order that they are called
+      

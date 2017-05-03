@@ -14,12 +14,12 @@ int main()
   srand(time(NULL));
 
   cout << "Let's play a guessing game\n";
-  cout << "What should me max be?  ";
+  cout << "What should the max be?  ";
   cin >> max;
   target = rand() % max + 1;
 
   cout << "Great. Guess a number between\n";
-  cout << "1 and " << max << ".";
+  cout << "1 and " << max << ". ";
 
   do {
     cin >> guess;
