@@ -77,3 +77,20 @@ ARRAYS======ARRAYS======ARRAYS======ARRAYS======ARRAYS===
 =ARRAYS======ARRAYS======ARRAYS======ARRAYS======ARRAYS==
 =========================================================
 
+  --  data_type array_name[length];
+
+    --  to initialize:
+  --  data_type array_name[length] = { value1, value2, etc };
+
+=========================================================
+==STRINGS====STRINGS====STRINGS====STRINGS====STRINGS====
+===STRINGS====STRINGS====STRINGS====STRINGS====STRINGS===
+=========================================================
+
+--  string literal:
+    **
+    **  cout << "this is a string literal";
+--  string variable:
+    **
+    **  string string_name = "string message";
+

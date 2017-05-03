@@ -5,6 +5,7 @@
     "istream": "cpp",
     "type_traits": "cpp",
     "utility": "cpp",
-    "xlocnum": "cpp"
+    "xlocnum": "cpp",
+    "xlocale": "cpp"
   }
 }

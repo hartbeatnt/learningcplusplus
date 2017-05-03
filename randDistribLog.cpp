@@ -10,6 +10,7 @@ int main()
 {
   int trials, target;
   int results[10];
+  double result;
   for (int i = 0; i < 10; i++) {
     results[i] = 0;
   }
@@ -19,10 +20,13 @@ int main()
   cin >> trials;
   cout << "ok. here's "<<trials<<" trials:\n";
   for (int i = 0; i < trials; i++) {
-    results[pick_random(0,9)]++;
+    ++results[pick_random(0,10)];
   }
-  for (int i = 0; i < 9; i++) {
-    cout << i << ": " << results[i] << endl;
+  for (int i = 0; i < 10; i++) {
+    cout << i << ": " << results[i];
+    result = results[i];
+    cout << "\tAccuracy: "; 
+    cout << result / (trials / 10.0) << endl;
   }
 }
 
