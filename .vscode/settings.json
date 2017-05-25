@@ -6,6 +6,8 @@
     "type_traits": "cpp",
     "utility": "cpp",
     "xlocnum": "cpp",
-    "xlocale": "cpp"
+    "xlocale": "cpp",
+    "fstream": "cpp",
+    "iosfwd": "cpp"
   }
 }

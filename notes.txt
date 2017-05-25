@@ -100,6 +100,40 @@ ARRAYS======ARRAYS======ARRAYS======ARRAYS======ARRAYS===
     **
     **  string string_name = "string message";
 
+--  'c-style':
+  --  char s[] = "Hello";   //  
+      --  names the array s
+      --  s is therefore constant and cannot change
+  --  char *p = "Hello";
+      --  assigns p to the memory address of the first
+          character in the string
+      --  p may therefore be changed
+--  string functions:
+    --  strcpy(str1, str2)
+        //  copies str2 to str1
+    --  strcat(str1, str2)
+        //  joins str2 onto end of str1
+    --  strlen(str)
+        //  returns the length of str
+    --  strncpy(str1, str2, n)
+        //  copies the first n chars of str2 to str1
+    --  strncat(str1, str2, n)
+        //  joins the first n chars of str2 to end of str1
+    --  strtok(src_str, delims)
+        //  return the first substr deliminated by delims
+          //  subsequent calls take NULL as first arg
+          //  and return next substring
+    --  strcmp(str1, str2)
+        // returns true if the strings are identical
+    !!  for all above, str1 must be declared with enough room
+        to contain all the characters in the resulting string
+    
+--  SINGLE QUOTE <> SINGLE CHAR   //  treated as numerical value
+--  DOUBLE QUOTE <> STRING        //  treated as menory address
+
+--string class makes all this way easier
+
+=======================================================
 POINTERS                           POINTERS
      POINTERS                   POINTERS
           POINTERS           POINTERS
@@ -127,7 +161,45 @@ a POINTER is a variable that contains a numeric memory address
 
   == *p = 5  // assigns the value 5 to the int pointed to by p
 
+POINTER ARITHMETIC:
+  only certain arithmetic operations are allowed with Pointers
+    --  address_expression + integer
+    --  integer + address_expression
+    --  address_expression - integer
+    --  integer - address_expression
+  
+  when integer and address expressions are added together, the integer is'
+  scaled by the size of the data type
+
+  an array's value is equal to the address value of its first element
+
+      THEREFORE:
+      -- &arr[2] is equivalent to arr + 2
+
 =========================================================
 =======REFERENCE ARGUMENTS======REFERENCE ARGUMENTS======
 =========REFERENCE ARGUMENTS=======REFERENCE ARGUMENTS===
 =========================================================
+
+  --  use the address operator (&) to an argument declaration
+      to make the argument pass by reference rather than copy
+
+        --  data_type func_name(data_type &var_ref1, data_type &var_ref2)
+    
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+File System: #include <fstream>
+
+    --  ofstream stream_name("file_name.extension");
+        //  creates an object of type ofstream (output filestream)
+            that outputs to file_name.extension
+
+    --  ifstream stream_name("file_name.extension");
+        //  creates an object of type ifstream (input filestream)
+            that reads from file_name.extension
+
+    --  can specify if the output is text or binary
+        --  with text files, use << and >> operators or .getline()
+        --  with binaries, use .read() and .write()
